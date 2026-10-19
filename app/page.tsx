@@ -74,13 +74,16 @@ export default function Page() {
     <main className="site-shell">
       <nav className="nav-bar" aria-label="Main navigation">
         <a href="#top" className="wordmark" onClick={closeMenu}>O<span>·</span>A</a>
-        <div className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
+        <div className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`} id="primary-menu">
           <a href="#work" onClick={closeMenu}>Selected work</a>
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
         </div>
-        <a href="mailto:ouerdiaabdiche@gmail.com" className="nav-availability">Open to opportunities <span className="status-dot" /></a>
-        <button className="menu-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
+        <a href="mailto:ouerdiaabdiche@gmail.com" className="nav-availability">
+          <span className="status-dot" />
+          Open to opportunities
+        </a>
+        <button className="menu-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} aria-controls="primary-menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
       </nav>
 
       <section className="hero" id="top">
@@ -88,7 +91,10 @@ export default function Page() {
           <div className="hero-main">
             <div className="hero-heading">
               <h1><span className="hero-word hero-word-primary">Digital</span> <span className="hero-word hero-word-accent">things</span><br /><em><span>with</span> feeling.</em></h1>
-              <div className="hero-aside"><span>(01 — 05)</span><p>I&apos;m Ouerdia, a full-stack developer and data analyst building useful digital products at the crossroads of web, data, and applied AI.</p></div>
+              <div className="hero-aside">
+                <p className="hero-aside-label">(01 — 05)</p>
+                <p className="hero-aside-copy">I&apos;m Ouerdia, a full-stack developer and data analyst building useful digital products at the crossroads of web, data, and applied AI.</p>
+              </div>
             </div>
             <div className="hero-bottom"><span>Based in Tizi Ouzou, Algeria<br />Working worldwide</span><a href="#work" className="scroll-cue">Scroll to explore <ArrowDownRight /></a></div>
           </div>
