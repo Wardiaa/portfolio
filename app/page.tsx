@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import { ArrowDownRight, ArrowUpRight, Menu, X } from 'lucide-react'
 
+import { HeroIdCard } from '@/components/hero-id-card'
+
 const projects = [
   {
     number: '01',
@@ -82,16 +84,17 @@ export default function Page() {
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-kicker"><span className="eyebrow-line" /> Full-stack developer · Data · AI / 2026</div>
-        <div className="hero-heading">
-          <h1><span className="hero-word hero-word-primary">Digital</span> <span className="hero-word hero-word-accent">things</span><br /><em><span>with</span> feeling.</em></h1>
-          <div className="hero-aside"><span>(01 — 05)</span><p>I&apos;m Ouerdia, a full-stack developer and data analyst building useful digital products at the crossroads of web, data, and applied AI.</p></div>
-        </div>
-        <div className="hero-bottom"><span>Based in Tizi Ouzou, Algeria<br />Working worldwide</span><a href="#work" className="scroll-cue">Scroll to explore <ArrowDownRight /></a></div>
-        <div className="hero-console" aria-label="Developer workspace preview">
-          <div className="console-top"><span className="console-lights"><i /><i /><i /></span><span>ouerdia.dev / home</span><span>⌘ K</span></div>
-          <div className="console-body"><div className="console-gutter">01<br />02<br />03<br />04<br />05<br />06</div><div className="console-code"><p className="typing-line"><span className="code-key">const</span> <span className="code-name">ouerdia</span> <span className="code-symbol">=</span> <span className="code-brace">{`{`}</span></p><p className="typing-line">&nbsp;&nbsp;role: <span className="code-string">&quot;builder&quot;</span>,</p><p className="typing-line">&nbsp;&nbsp;focus: <span className="code-string">[&quot;web&quot;, &quot;data&quot;, &quot;ai&quot;]</span>,</p><p className="typing-line">&nbsp;&nbsp;status: <span className="code-string">&quot;open_to_work&quot;</span></p><p className="typing-line"><span className="code-brace">{`}`}</span></p><p className="console-cursor">▌</p></div></div>
-          <div className="console-footer"><span><b /> all systems creative</span><span>v.2026.01</span></div>
+        <div className="hero-grid">
+          <div className="hero-main">
+            <div className="hero-heading">
+              <h1><span className="hero-word hero-word-primary">Digital</span> <span className="hero-word hero-word-accent">things</span><br /><em><span>with</span> feeling.</em></h1>
+              <div className="hero-aside"><span>(01 — 05)</span><p>I&apos;m Ouerdia, a full-stack developer and data analyst building useful digital products at the crossroads of web, data, and applied AI.</p></div>
+            </div>
+            <div className="hero-bottom"><span>Based in Tizi Ouzou, Algeria<br />Working worldwide</span><a href="#work" className="scroll-cue">Scroll to explore <ArrowDownRight /></a></div>
+          </div>
+          <div className="hero-visual">
+            <HeroIdCard />
+          </div>
         </div>
       </section>
 
