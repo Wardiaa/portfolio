@@ -7,7 +7,9 @@ import { AbstractPortrait } from '@/components/abstract-portrait'
 const EMAIL = 'ouerdiaabdiche@gmail.com'
 
 
-const CV_URL = '/cv.pdf'
+const CV_EN_URL = '/cv_EN.pdf'
+const CV_FR_URL = '/cv.pdf'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/ouerdia-abdiche-003443445'
 
 
 type CopyState = 'idle' | 'copied' | 'error'
@@ -100,8 +102,24 @@ export function HeroIdCard() {
               {copyState === 'copied' ? 'Copied' : 'Copy email'}
             </button>
 
-            <a className="id-btn id-btn-outline" href={CV_URL}>
-              Download CV
+            <a
+              className="id-btn id-btn-outline"
+              href={CV_EN_URL}
+              download="Ouerdia-Abdiche-CV-EN.pdf"
+              title="Download English CV"
+              aria-label="Download English CV"
+            >
+              CV · EN
+            </a>
+
+            <a
+              className="id-btn id-btn-outline"
+              href={CV_FR_URL}
+              download="Ouerdia-Abdiche-CV-FR.pdf"
+              title="Download French CV"
+              aria-label="Download French CV"
+            >
+              CV · FR
             </a>
 
             <div className="id-socials">
@@ -113,6 +131,15 @@ export function HeroIdCard() {
                 rel="noreferrer"
               >
                 GH
+              </a>
+              <a
+                className="id-social"
+                href={LINKEDIN_URL}
+                aria-label="LinkedIn profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LI
               </a>
             </div>
           </div>

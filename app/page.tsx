@@ -236,7 +236,7 @@ export default function Page() {
 
       <section className="contact-section" id="contact"><p className="section-label">/ Let&apos;s build something</p><h2>Have an idea<br /><em>to explore?</em></h2><a className="contact-email" href="mailto:ouerdiaabdiche@gmail.com">ouerdiaabdiche@gmail.com <ArrowUpRight /></a><div className="contact-orbit">✳</div></section>
 
-      <footer className="footer"><span>© 2026 Ouerdia Abdiche</span><div className="socials"><a href="https://github.com/Wardiaa" aria-label="Github" target="_blank" rel="noreferrer">GH</a><a href="https://linkedin.com" aria-label="LinkedIn">LI</a><a href="https://instagram.com" aria-label="Instagram">IG</a></div><span>Full-stack · Data · AI</span></footer>
+      <footer className="footer"><span>© 2026 Ouerdia Abdiche</span><div className="socials"><a href="https://github.com/Wardiaa" aria-label="Github" target="_blank" rel="noreferrer">GH</a><a href="https://www.linkedin.com/in/ouerdia-abdiche-003443445" aria-label="LinkedIn" target="_blank" rel="noreferrer">LI</a></div><span>Full-stack · Data · AI</span></footer>
     </main>
   )
 }
