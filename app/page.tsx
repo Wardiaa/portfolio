@@ -24,42 +24,50 @@ const projects = [
   },
   {
     number: '03',
-    title: 'EventTix / Event Booking',
-    type: 'Full-stack application · Laravel & MySQL',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85',
-    demo: 'https://eventtix-wliw.onrender.com',
+    title: 'Mainline / Integration Dashboard',
+    type: 'Full-stack SaaS · Next.js, Fastify, BullMQ & Redis',
+    image: '/mainline-cover.png',
+    demo: 'https://mainline-six.vercel.app',
     className: 'project-c',
   },
   {
     number: '04',
-    title: 'FinSight / Personal Finance',
-    type: 'Financial tracking & KPI dashboard · Personal project',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85',
-    demo: 'https://finsight-ra3r.onrender.com/auth',
+    title: 'EventTix / Event Booking',
+    type: 'Full-stack application · Laravel & MySQL',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85',
+    demo: 'https://eventtix-wliw.onrender.com',
     className: 'project-d',
   },
   {
     number: '05',
-    title: 'Tala / Real-time Messaging',
-    type: 'Team project · Accounts & video calls lead',
-    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85',
+    title: 'FinSight / Personal Finance',
+    type: 'Financial tracking & KPI dashboard · Personal project',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85',
+    demo: 'https://finsight-ra3r.onrender.com/auth',
     className: 'project-e',
   },
   {
     number: '06',
-    title: 'Syncra / Live Polls & Quizzes',
-    type: 'Real-time application · Socket.io',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=85',
-    demo: 'https://pfe-lcro.onrender.com',
+    title: 'Tala / Real-time Messaging',
+    type: 'Team project · Accounts & video calls lead',
+    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85',
     className: 'project-f',
   },
   {
     number: '07',
+    title: 'Syncra / Live Polls & Quizzes',
+    type: 'Real-time application · Socket.io',
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=85',
+    demo: 'https://pfe-lcro.onrender.com',
+    className: 'project-g',
+  },
+  {
+    number: '08',
     title: 'CollabHub / Team Collaboration',
     type: 'Project management platform · Personal project',
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=85',
     demo: 'https://collab-hub-5e67.onrender.com',
-    className: 'project-g',
+    className: 'project-h',
   },
 ]
 
@@ -197,7 +205,7 @@ export default function Page() {
       </section>
 
       <section className="work-section" id="work">
-        <div className="section-header"><p className="section-label">/ Selected work</p><p className="section-count">(07 projects)</p></div>
+        <div className="section-header"><p className="section-label">/ Selected work</p><p className="section-count">(08 projects)</p></div>
         <div className="projects-grid">
           {projects.map((project) => <article className={`project-card ${project.className}`} key={project.number}><a href={project.demo} className="project-image" target="_blank" rel="noreferrer"><img src={project.image} alt={`${project.title} project preview`} /><span className="project-arrow"><ArrowUpRight /></span></a><div className="project-meta"><span>{project.number}</span><div><h2>{project.title}</h2><p>{project.type}</p></div></div></article>)}
         </div>
