@@ -19,7 +19,7 @@ const projects = [
     title: 'DataPulse / IT Market Intelligence',
     type: 'Data pipeline & ML dashboard · Personal project',
     image: '/datapulse-cover.png',
-    demo: 'https://datapulse-1.streamlit.app',
+    demo: 'https://datapulse-lu7i.onrender.com/',
     className: 'project-b',
   },
   {
