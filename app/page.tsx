@@ -11,7 +11,7 @@ const projects = [
     title: 'FlowMind / AI Workspace',
     type: 'Full-stack platform · Personal project',
     image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1400&q=85',
-    demo: 'https://flowmind-z0hz.onrender.com',
+    demo: 'https://flowmind-5ffh.onrender.com',
     className: 'project-a',
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     title: 'DataPulse / IT Market Intelligence',
     type: 'Data pipeline & ML dashboard · Personal project',
     image: '/datapulse-cover.png',
-    demo: 'https://datapulse-lu7i.onrender.com/',
+    demo: 'https://datapulse-v2ga.onrender.com/',
     className: 'project-b',
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     title: 'EventTix / Event Booking',
     type: 'Full-stack application · Laravel & MySQL',
     image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85',
-    demo: 'https://eventtix-wliw.onrender.com',
+    demo: 'https://eventtix-szaw.onrender.com',
     className: 'project-d',
   },
   {
