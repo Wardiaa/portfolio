@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type KeyboardEvent } from 'react'
-import { ArrowDownRight, ArrowUpRight, Menu, X } from 'lucide-react'
+import { useEffect, useRef, useState, type CSSProperties, type KeyboardEvent } from 'react'
+import { ArrowUpRight, Menu, X } from 'lucide-react'
 
-import { HeroIdCard } from '@/components/hero-id-card'
+import { StudioHero } from '@/components/studio-hero'
 
 const projects = [
   {
@@ -181,28 +181,14 @@ export default function Page() {
         <button className="menu-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} aria-controls="primary-menu" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</button>
       </nav>
 
-      <section className="hero" id="top">
-        <div className="hero-grid">
-          <div className="hero-main">
-            <div className="hero-heading">
-              <h1><span className="hero-word hero-word-primary">Digital</span> <span className="hero-word hero-word-accent">things</span><br /><em><span>with</span> feeling.</em></h1>
-              <div className="hero-aside">
-                <p className="hero-aside-label">(01 — 05)</p>
-                <p className="hero-aside-copy">I&apos;m Ouerdia, a full-stack developer and data analyst building useful digital products at the crossroads of web, data, and applied AI.</p>
-              </div>
-            </div>
-            <div className="hero-bottom"><span>Based in Tizi Ouzou, Algeria<br />Working worldwide</span><a href="#work" className="scroll-cue">Scroll to explore <ArrowDownRight /></a></div>
-          </div>
-          <div className="hero-visual">
-            <HeroIdCard />
-          </div>
-        </div>
-      </section>
+      <div className="hero-transition">
+        <StudioHero />
 
-      <section className="manifesto" id="about">
-        <p className="section-label">/ A little context</p>
-        <div className="manifesto-copy"><p>I turn complex ideas into <span>clear, useful products</span> — from AI workspaces and real-time apps to data pipelines and dashboards that help people make better decisions.</p><a href="#contact" className="text-link">Let&apos;s connect <ArrowUpRight /></a></div>
-      </section>
+        <section className="manifesto" id="about">
+          <p className="section-label">/ A little context</p>
+          <div className="manifesto-copy"><p>I turn complex ideas into <span>clear, useful products</span> — from AI workspaces and real-time apps to data pipelines and dashboards that help people make better decisions.</p><a href="#contact" className="text-link">Let&apos;s connect <ArrowUpRight /></a></div>
+        </section>
+      </div>
 
       <section className="work-section" id="work">
         <div className="section-header"><p className="section-label">/ Selected work</p><p className="section-count">(08 projects)</p></div>
