@@ -28,8 +28,8 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1400&q=85',
     demo: 'https://flowmind-5ffh.onrender.com',
     status: 'Live',
-    summary: 'An AI workspace that turns scattered notes into structured, actionable plans.',
-    stack: ['Next.js', 'TypeScript', 'AI'],
+    summary: 'A workspace operations dashboard for AI agents, automation workflows and document RAG — with scheduled runs, human approvals and Gemini-powered answers.',
+    stack: ['React', 'Node.js', 'PostgreSQL', 'Gemini'],
     featured: true,
   },
   {
@@ -39,7 +39,7 @@ const projects: Project[] = [
     image: '/datapulse-cover.png',
     demo: 'https://datapulse-v2ga.onrender.com/',
     status: 'Live',
-    summary: 'A data pipeline and ML dashboard for reading the IT job market.',
+    summary: 'An end-to-end data pipeline that scrapes, cleans and models tech job postings, tracks market KPIs and predicts salary from role, location, seniority and skills.',
     stack: ['Python', 'Pandas', 'scikit-learn', 'Streamlit'],
   },
   {
@@ -49,7 +49,7 @@ const projects: Project[] = [
     image: '/mainline-cover.png',
     demo: 'https://mainline-six.vercel.app',
     status: 'Live',
-    summary: 'A control room for integrations, queues and sync health.',
+    summary: 'A full-stack integration dashboard that unifies GitHub issues, pull requests and Linear tickets into one prioritized queue — with real OAuth, signed webhooks and live updates.',
     stack: ['Next.js', 'Fastify', 'BullMQ', 'Redis'],
     wide: true,
   },
@@ -60,7 +60,7 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85',
     demo: 'https://eventtix-szaw.onrender.com',
     status: 'Live',
-    summary: 'A clean event booking flow built with Laravel and MySQL.',
+    summary: 'A Laravel event management and ticketing platform with role-based dashboards, transactional booking, per-ticket QR codes and entry validation.',
     stack: ['Laravel', 'PHP', 'MySQL'],
   },
   {
@@ -70,8 +70,8 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=85',
     demo: 'https://finsight-ra3r.onrender.com/auth',
     status: 'Live',
-    summary: 'A personal finance tracker with KPIs that make spending legible.',
-    stack: ['React', 'Node.js', 'KPI dashboards'],
+    summary: 'A full-stack finance tracker for income, expenses, category spending and monthly trends — built with React, TypeScript and Supabase.',
+    stack: ['React', 'TypeScript', 'Supabase', 'Recharts'],
   },
   {
     number: '06',
